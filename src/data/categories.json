@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Consumer App",
+    "displayName": "Consumer App",
+    "icon": "placeholder.svg",
+    "order": 1
+  },
+  {
+    "id": "2B / SaaS",
+    "displayName": "2B / SaaS",
+    "icon": "placeholder.svg",
+    "order": 2
+  },
+  {
+    "id": "Robotics",
+    "displayName": "Robotics",
+    "icon": "placeholder.svg",
+    "order": 3
+  },
+  {
+    "id": "Infra",
+    "displayName": "Infra",
+    "icon": "placeholder.svg",
+    "order": 4
+  }
+] 
