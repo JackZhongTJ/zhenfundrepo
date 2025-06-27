@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true
+  // 最小化配置，让 Vercel 自动处理
 };
 
 module.exports = nextConfig; 
