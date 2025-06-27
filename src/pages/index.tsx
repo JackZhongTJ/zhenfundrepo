@@ -15,16 +15,16 @@ export default function Home() {
         <meta name="description" content="What ZhenFund Bets on - GenAI Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="min-h-screen bg-[#c9bc9c0d] flex flex-col items-center py-6 sm:py-8 md:py-12 overflow-auto">
-        {/* Header 区域 - 移动优先响应式 */}
-        <div className="text-center mb-10 sm:mb-14 md:mb-18 lg:mb-22 px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#804e21] mb-2">GenAI Startups</h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#000000]">What ZhenFund Bets on</p>
+      <main className="min-h-screen bg-[#FCF9F5] flex flex-col items-center py-12">
+        {/* Header 区域 */}
+        <div className="text-center mb-12 px-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#8B5C2B] mb-3">GenAI Startups</h1>
+          <p className="text-xl md:text-2xl text-[#6B4F1D]">What ZhenFund Bets on</p>
         </div>
         
-        {/* 分类与公司展示区 - 响应式宽度 */}
-        <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto px-3 sm:px-6 md:px-8">
-          <div id="portfolio-list" className="space-y-8 sm:space-y-12 md:space-y-16">
+        {/* 分类与公司展示区 - 核心响应式容器 */}
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div id="portfolio-list" className="space-y-16">
             {sortedCategories.map(category => {
               const companiesInCategory = companies
                 .filter(c => c.category === category.id)
@@ -43,9 +43,7 @@ export default function Home() {
         </div>
         
         {/* Footer */}
-        <footer className="mt-12 sm:mt-16 md:mt-20 flex justify-center items-center">
-          <img src="/zhen-fund_logo.png" alt="ZhenFund Logo" className="h-6 sm:h-8 md:h-10" style={{objectFit: 'contain'}} />
-        </footer>
+        <footer className="mt-20 text-[#BFA16A] text-xl font-semibold">ZhenFund</footer>
       </main>
     </>
   );
