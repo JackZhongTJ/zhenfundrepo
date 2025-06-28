@@ -4,11 +4,31 @@ interface CompanyCardProps {
   name: string;
   description: string;
   logo: string;
+  url: string;
 }
 
-const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, logo }) => {
+const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, logo, url }) => {
+  const handleClick = () => {
+    if (url && url.trim() !== '') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  const hasUrl = url && url.trim() !== '';
+
   return (
-    <div className="bg-transparent py-1.5 sm:py-2 md:py-3 px-1 sm:px-1.5 md:px-2">
+    <div 
+      className={`bg-transparent py-1.5 sm:py-2 md:py-3 px-1 sm:px-1.5 md:px-2 ${hasUrl ? 'cursor-pointer' : ''}`}
+      onClick={hasUrl ? handleClick : undefined}
+      role={hasUrl ? "button" : undefined}
+      tabIndex={hasUrl ? 0 : undefined}
+      onKeyDown={hasUrl ? (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleClick();
+        }
+      } : undefined}
+    >
       <div className="flex items-start space-x-1.5 sm:space-x-2 md:space-x-2.5">
         {/* Logo - 响应式尺寸 */}
         <div className="flex-shrink-0 self-start">
