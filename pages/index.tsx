@@ -8,6 +8,10 @@ export default function Home() {
   // 按 order 排序分类
   const sortedCategories = [...categories].sort((a, b) => a.order - b.order);
 
+  const handleZhenFundClick = () => {
+    window.open('https://zhenfund.com/', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
       <Head>
@@ -44,7 +48,21 @@ export default function Home() {
         
         {/* Footer */}
         <footer className="mt-12 sm:mt-16 md:mt-20 flex justify-center items-center">
-          <img src="/zhen-fund_logo.png" alt="ZhenFund Logo" className="h-6 sm:h-8 md:h-10" style={{objectFit: 'contain'}} />
+          <img 
+            src="/zhen-fund_logo.png" 
+            alt="ZhenFund Logo" 
+            className="h-6 sm:h-8 md:h-10 cursor-pointer" 
+            style={{objectFit: 'contain'}}
+            onClick={handleZhenFundClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleZhenFundClick();
+              }
+            }}
+          />
         </footer>
       </main>
     </>
