@@ -47,7 +47,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, logo, url 
           <h3 className="text-[10px] sm:text-xs md:text-sm lg:text-base font-medium text-[#000000] truncate leading-tight">
             {name}
           </h3>
-          <p className="text-[7px] sm:text-[8px] md:text-[9px] text-[#222222] leading-relaxed mt-0.5">
+          <p className="text-[7px] sm:text-[9px] md:text-[10px] text-[#222222] leading-relaxed mt-0.5">
             <span 
               className="block"
               style={{
