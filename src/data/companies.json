@@ -19,7 +19,7 @@
   { "name": "Reorc", "description": "AI platform for managing data and making data-driven decisions", "logo": "reorc.png", "category": "2B / SaaS", "order": 4, "url": "https://reorc.com/" },
   { "name": "Mogic AI", "description": "AI marketing solution for achieving efficient, high quality growth", "logo": "mogicai.png", "category": "2B / SaaS", "order": 3, "url": "https://mogic.ai/" },
   { "name": "Synthmind AI", "description": "AI marketer for 24/7 marketing, traffic & leads generation", "logo": "synthmind.png", "category": "2B / SaaS", "order": 5, "url": "https://synthmind.app/" },
-  { "name": "Teable", "description": "AI no-code database built on Postgres", "logo": "hyperknow.png", "category": "2B / SaaS", "order": 6, "url": "https://teable.io/" },
+  { "name": "Teable", "description": "AI no-code database built on Postgres", "logo": "teable.png", "category": "2B / SaaS", "order": 6, "url": "https://teable.io/" },
   { "name": "AI Rudder", "description": "AI-powered voice assistants for better customer service", "logo": "airudder.png", "category": "2B / SaaS", "order": 1, "url": "https://airudder.com/" },
 
   { "name": "ARX", "description": "Lightweight robotic arms for embodied AI", "logo": "arx.png", "category": "Robotics", "order": 1, "url": "https://arx-x.com/" },
