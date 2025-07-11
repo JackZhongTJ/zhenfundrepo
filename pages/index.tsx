@@ -24,7 +24,7 @@ export default function Home() {
         <div className="text-center mb-10 sm:mb-14 md:mb-18 lg:mb-22 px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-2">
             <span className="text-[#804e21]">GenAI Startups</span>
-            <span className="mx-1 text-[#c9bc9c]">@ ZhenFund</span>
+            <span className="mx-1 text-[#804e21]/60">@ ZhenFund</span>
           </h1>
         </div>
         
