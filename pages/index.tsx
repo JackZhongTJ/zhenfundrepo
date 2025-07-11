@@ -22,8 +22,10 @@ export default function Home() {
       <main className="min-h-screen bg-[#c9bc9c0d] flex flex-col items-center py-6 sm:py-8 md:py-12 overflow-auto">
         {/* Header 区域 - 移动优先响应式 */}
         <div className="text-center mb-10 sm:mb-14 md:mb-18 lg:mb-22 px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#804e21] mb-2">GenAI Startups</h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#000000]">What ZhenFund Bets on</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-2">
+            <span className="text-[#804e21]">GenAI Startups</span>
+            <span className="mx-1 text-[#c9bc9c]">@ ZhenFund</span>
+          </h1>
         </div>
         
         {/* 分类与公司展示区 - 响应式宽度 */}
